@@ -1,0 +1,262 @@
+/* 1. Réinitialisation rapide (optionnelle) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif; /* Ajuste la police selon tes besoins */
+}
+
+/* 2. Styles généraux du body */
+body {
+  background: #fff;
+  color: #000;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* 3. Barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar__links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar__links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar__links li a:hover {
+  color: #666;
+}
+
+.navbar__quote-btn {
+  padding: 0.5rem 1rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.navbar__quote-btn:hover {
+  background: #333;
+}
+
+/* 4. Section Hero */
+.hero {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.hero__badge {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #5b4eff; /* Couleur de surlignage */
+  position: relative;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #5b4eff, #ff53e0);
+  z-index: -1;
+  /* Ajuste la hauteur et le positionnement pour l'effet de soulignement */
+  transform: translateY(0.2rem);
+}
+
+.hero__subtitle {
+  font-size: 1rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+/* 5. Boutons de la section Hero */
+.hero__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn--primary {
+  background: linear-gradient(to right, #5b4eff, #ff53e0);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  filter: brightness(0.9);
+}
+
+.btn--secondary {
+  background: #fff;
+  color: #5b4eff;
+  border: 2px solid #5b4eff;
+}
+
+.btn--secondary:hover {
+  background: #5b4eff;
+  color: #fff;
+}
+
+/* 6. Adaptation responsive (mobile) */
+@media (max-width: 768px) {
+  .navbar__links {
+    display: none; /* Exemple simple : on masque le menu en petit écran */
+  }
+
+  .navbar__quote-btn {
+    display: none;
+  }
+
+  /* On peut ajouter un bouton hamburger, etc. selon tes besoins */
+  .hero {
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 0.95rem;
+  }
+}
+/* SECTION SHOWCASE */
+.showcase {
+  /* Arrière-plan global de la section (possibilité de dégradé léger) */
+  background: linear-gradient(to right, #f8f9ff, #ffffff);
+  /* Espace interne autour du bloc */
+  padding: 4rem 2rem;
+  /* Centrer le contenu si tu veux un effet plus large/étroit */
+  display: flex;
+  justify-content: center;
+}
+
+.showcase__container {
+  /* Largeur max pour limiter la taille du bloc */
+  max-width: 900px;
+  height: 500px;
+  width: 100%;
+  /* Fond dégradé ou couleur unie pour le bloc central */
+  background: linear-gradient(to bottom right, #cfd7ec, #eec5ee);
+  border-radius: 16px; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  /* Espace interne dans le bloc */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.showcase__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.showcase__subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 600px; 
+  margin: 0 auto;
+}
+/* SECTION SERVICES-INTRO */
+.services-intro {
+  text-align: center;          /* Centre tout le texte dans cette section */
+  max-width: 800px;           /* Limite la largeur pour un rendu lisible */
+  margin: 0 auto;             /* Centre la section horizontalement */
+  padding: 4rem 2rem;         /* Espacement vertical et horizontal */
+}
+
+.services-intro__badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: #f0f0f0;   /* Couleur de fond du badge */
+  border-radius: 999px;        /* Bords très arrondis (pastille) */
+  margin-bottom: 1rem;
+}
+
+.services-intro__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.services-intro__subtitle {
+  font-size: 1rem;
+  color: #444;
+  max-width: 600px;            /* Limite la largeur du paragraphe */
+  margin: 0.5rem auto 0;       /* Centre le paragraphe */
+  line-height: 1.6;
+}
+
+/* Surlignage dégradé sous "Digital Services" */
+.highlight {
+  position: relative;
+  color: #5b4eff; /* Couleur de texte (peut être ajustée) */
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  size: 5px;
+  border-radius: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #5b4eff, #ff53e0);
+  z-index: -1;
+  transform: translateY(0.2rem);
+}
