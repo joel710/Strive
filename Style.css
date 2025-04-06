@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif; /* Ajuste la police selon tes besoins */
+  font-family: 'Arial', sans-serif;
+  /* Ajuste la police selon tes besoins */
 }
 
 /* 2. Styles généraux du body */
@@ -21,7 +22,7 @@ body {
   align-items: center;
   padding: 1rem 2rem;
   background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .navbar__logo {
@@ -87,7 +88,8 @@ body {
 }
 
 .highlight {
-  color: #5b4eff; /* Couleur de surlignage */
+  color: #5b4eff;
+  /* Couleur de surlignage */
   position: relative;
 }
 
@@ -150,7 +152,8 @@ body {
 /* 6. Adaptation responsive (mobile) */
 @media (max-width: 768px) {
   .navbar__links {
-    display: none; /* Exemple simple : on masque le menu en petit écran */
+    display: none;
+    /* Exemple simple : on masque le menu en petit écran */
   }
 
   .navbar__quote-btn {
@@ -171,6 +174,7 @@ body {
     font-size: 0.95rem;
   }
 }
+
 /* SECTION SHOWCASE */
 .showcase {
   /* Arrière-plan global de la section (possibilité de dégradé léger) */
@@ -189,7 +193,7 @@ body {
   width: 100%;
   /* Fond dégradé ou couleur unie pour le bloc central */
   background: linear-gradient(to bottom right, #cfd7ec, #eec5ee);
-  border-radius: 16px; 
+  border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   /* Espace interne dans le bloc */
   padding: 4rem 2rem;
@@ -206,15 +210,20 @@ body {
 .showcase__subtitle {
   font-size: 1.1rem;
   color: #555;
-  max-width: 600px; 
+  max-width: 600px;
   margin: 0 auto;
 }
+
 /* SECTION SERVICES-INTRO */
 .services-intro {
-  text-align: center;          /* Centre tout le texte dans cette section */
-  max-width: 800px;           /* Limite la largeur pour un rendu lisible */
-  margin: 0 auto;             /* Centre la section horizontalement */
-  padding: 4rem 2rem;         /* Espacement vertical et horizontal */
+  text-align: center;
+  /* Centre tout le texte dans cette section */
+  max-width: 800px;
+  /* Limite la largeur pour un rendu lisible */
+  margin: 0 auto;
+  /* Centre la section horizontalement */
+  padding: 4rem 2rem;
+  /* Espacement vertical et horizontal */
 }
 
 .services-intro__badge {
@@ -222,8 +231,10 @@ body {
   padding: 0.4rem 1rem;
   font-size: 0.9rem;
   color: #666;
-  background-color: #f0f0f0;   /* Couleur de fond du badge */
-  border-radius: 999px;        /* Bords très arrondis (pastille) */
+  background-color: #f0f0f0;
+  /* Couleur de fond du badge */
+  border-radius: 999px;
+  /* Bords très arrondis (pastille) */
   margin-bottom: 1rem;
 }
 
@@ -236,15 +247,18 @@ body {
 .services-intro__subtitle {
   font-size: 1rem;
   color: #444;
-  max-width: 600px;            /* Limite la largeur du paragraphe */
-  margin: 0.5rem auto 0;       /* Centre le paragraphe */
+  max-width: 600px;
+  /* Limite la largeur du paragraphe */
+  margin: 0.5rem auto 0;
+  /* Centre le paragraphe */
   line-height: 1.6;
 }
 
 /* Surlignage dégradé sous "Digital Services" */
 .highlight {
   position: relative;
-  color: #5b4eff; /* Couleur de texte (peut être ajustée) */
+  color: #5b4eff;
+  /* Couleur de texte (peut être ajustée) */
 }
 
 .highlight::after {
@@ -259,4 +273,261 @@ body {
   background: linear-gradient(to right, #5b4eff, #ff53e0);
   z-index: -1;
   transform: translateY(0.2rem);
+}
+
+/* Section services */
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+  /* Pour s’adapter aux petits écrans */
+}
+
+/* Cartes */
+.service-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 320px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icônes */
+.service-icon {
+  background: #f0f0f0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto 15px;
+}
+
+/* Titres */
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.service-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Liste */
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.service-card ul li {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* Bouton */
+.learn-more {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.learn-more:hover {
+  background: #f8f8f8;
+  border-color: #bbb;
+}
+
+/* view all services*/
+.button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 35vh;
+        }
+
+        .service-button {
+            padding: 15px 40px;
+            background-color: #020202;
+            color: white;
+            border: none;
+            border-radius: 13px;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-button:active {
+            transform: translateY(0);
+            background-color: #00408a;
+        }
+
+        .service-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+        }
+/* work section */
+
+/* Section globale */
+/* Section globale */
+.case-studies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+}
+
+/* Conteneur des cartes en ligne */
+.case-studies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Bouton tag */
+.tag {
+  background: #e5e5e5;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: default;
+}
+
+/* Effet de soulignement uniquement sur "Case Studies" */
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #2979ff, #9c27b0);
+  border-radius: 10px;
+}
+
+/* Description */
+.description {
+  font-size: 1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 15px auto 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Carte case-study */
+.case-study {
+  position: relative;
+  width: 350px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Badge catégorie */
+.case-study .tag {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+/* Titre */
+.case-study .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+/* Description */
+.case-study .description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Lien vers le case study */
+.link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+/* Statistiques */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.stats div {
+  flex: 1;
+}
+
+.stats strong {
+  font-size: 1.2rem;
+  color: black;
+}
+
+/* Bouton "View All Projects" */
+.view-all {
+  background: black;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
 }
