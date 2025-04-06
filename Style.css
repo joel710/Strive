@@ -842,3 +842,190 @@ body {
   max-width: 650px;
   margin: 0 auto;
 }
+
+/* our value */
+.our-value-section {
+  background-color: #f9f9fb;
+  padding: 4rem 2rem;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.our-value-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.our-value-header h2 span {
+  border-bottom: 3px solid #6f5af2;
+  padding-bottom: 2px;
+}
+
+.our-value-header p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.our-value-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.value-card .icon {
+  background-color: #eee;
+  color: #000;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.value-card p {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+/* menber */
+.team-container {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f9f9f9; /* Example background */
+        }
+
+        .team-title {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .team-description {
+            color: #666;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .team-cards-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .team-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 250px;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-card-image-container {
+            width: 100%;
+            height: auto;
+        }
+
+        .team-card-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .team-card-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .team-card-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .team-card-role {
+            color: #777;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .team-card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .team-card:hover .team-card-overlay {
+            opacity: 1;
+        }
+
+        .team-card-overlay-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .team-card-overlay-description {
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .team-card-overlay-social {
+            display: flex;
+            gap: 10px;
+        }
+
+        .team-card-overlay-social a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
